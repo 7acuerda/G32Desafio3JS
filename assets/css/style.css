@@ -1,0 +1,20 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+div {
+    display: flex;
+    align-items: center; 
+    height: 20vh;
+    width: 200px;
+    text-align: center;
+}
+
+.container {
+    gap: 30px;
+    width: auto;
+}

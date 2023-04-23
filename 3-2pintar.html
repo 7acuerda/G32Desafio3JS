@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Funciones - Numero 3.2</title>
+</head>
+
+<body>
+    <div id="ele1"> hello </div>
+
+    <!-- // Punto 3.1 (sin modificar) -->
+
+    <!-- <script>
+        // function pintar() {
+        //     ele = document.getElementById("ele1")
+        //     ele.style.backgroundColor = 'yellow'
+        // }
+        // ele = document.getElementById("ele1")
+        // ele.addEventListener("click", pintar);
+
+    </script> -->
+
+    <!-- // Punto 3.2 (resolucion)-->
+
+    <script>
+        const elem = document.getElementById('ele1');
+
+        function pintar(elemento, color = 'green') {
+            elem.style.backgroundColor = color;
+        }
+
+        elem.addEventListener('click', (e) => {
+            pintar(e.target, 'yellow');
+        });
+    </script>
+</body>
+
+</html>
